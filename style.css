@@ -1,3 +1,7 @@
+body {
+    background-color: #e3e3e3;
+}
+
 body, p, h1, h2 {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -5,6 +9,11 @@ body, p, h1, h2 {
 
 a {
     text-decoration: none;
+}
+
+a, button {
+    transition: 500ms;
+    cursor: pointer;
 }
 
 .black-header {
@@ -23,7 +32,6 @@ a {
 
 .black-header a:hover {
     color: white;
-    transition: 500ms;
 }
 
 .white-header {
@@ -40,5 +48,44 @@ a {
 }
 
 .white-header a {
+    color: #616161;
+    font-size: 17px;
     margin: 0 10px;
+}
+
+.white-header a:hover {
+    color: #909090;
+}
+
+.white-header button {
+    background-color: #f53c3c;
+    color: white;
+    padding: 12px 17px;
+    border: none;
+    border-radius: 5px;
+}
+
+.white-header button:hover {
+    color: #f87676;
+}
+
+.hero {
+    height: 80vh;
+    background-image: url("./manhattan+sunset+new+york+city+empire+state+building+timelapse.jpg");
+    background-size: cover;
+}
+
+.news {
+    padding: 32px;
+    background-color: white;
+    margin: -24px 32px 0px 32px;
+}
+
+.news h2 {
+    text-align: center;
+    font-weight: 300;
+    border-bottom: 2px solid rgb(235, 217, 60);
+    width: 120%;
+    margin: 0 auto;
+    padding-bottom: 16px;
 }
